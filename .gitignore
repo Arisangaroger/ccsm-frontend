@@ -1,0 +1,6 @@
+# Node.js (for Vite)
+node_modules/
+.env
+.env.local
+dist/
+npm-debug.log*
