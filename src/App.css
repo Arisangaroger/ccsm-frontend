@@ -1,0 +1,29 @@
+
+@import "tailwindcss";
+
+.mirror-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        circle at 20% 20%,
+        rgba(0, 255, 180, 0.1),
+        transparent 60%
+      ),
+      radial-gradient(
+        circle at 80% 80%,
+        rgba(0, 180, 255, 0.1),
+        transparent 60%
+      );
+  }
+  
+  .btn-glow {
+    @apply bg-blue-600 text-white px-4 py-2 rounded transition duration-300;
+  }
+  .btn-glow:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 180, 0.4), 0 0 25px rgba(0, 180, 255, 0.3);
+    background-color: #2563eb;
+  }
+  

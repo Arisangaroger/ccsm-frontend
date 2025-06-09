@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Basic styles */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Hide scrollbar but allow scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+} 
